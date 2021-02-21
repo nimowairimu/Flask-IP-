@@ -4,14 +4,14 @@ import os
 import requests
 
 api_key = None
-s_url = None
+src_url = None
 art_url = None
 
 def configure_request(app):
-    global api_key,s_url,art_url
+    global api_key,src_url,art_url
     api_key = app.config['API_KEY']
     articles_url = app.config['SOURCE_ARTICLES_URL']
-    s_url = app.config['NEWS_API_BASE_URL']
+    src_url = app.config['NEWS_API_BASE_URL']
     art_url = app.config['NEWS_ARTICLES_APL_URL']
     
 
@@ -19,7 +19,7 @@ def get_sources(category):
     """
     function that gets response from the api call
     """    
-    sources_url = s_url.format(category,api_key)
+    sources_url = src_url.format(category,api_key)
 
     with urllib.request.urlopen(sources_url) as url:
         sources_data = url.read()
