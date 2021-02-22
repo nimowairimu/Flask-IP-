@@ -1,7 +1,7 @@
-from app import app
-from .request import get_sources,get_articles,search_articles
-from flask import render_template,request,redirect,url_for
-
+from flask import render_template,redirect,request,url_for
+from . import main
+# from app import app
+from ..request import get_sources,get_articles,search_articles,articles_source
 
 @main.route('/')
 def HomePage():
@@ -42,6 +42,5 @@ def articleSearch(article_name):
     searched_articles = search_articles(search_name_format)
 
     return render_template('search.html',articles = searched_articles)
-    
 
 
