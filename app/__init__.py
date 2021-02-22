@@ -1,5 +1,8 @@
 from flask import Flask
+from flask_bootstap import Bootstrap
 from config import config_options
+
+boostrap = Bootstrap
 
 def create_app(config_name):
     app = Flask(__name__,instance_relative_config = True,static_url_path='/static')
@@ -8,7 +11,7 @@ def create_app(config_name):
     from .main import main as main_blueprint
     app.register_blueprint(main_blueprint)
 
-    from .news_requests import configure_request
+    from .request import configure_request
     configure_request(app)
 
     return app

@@ -9,7 +9,7 @@ manager.add_command('server',Server)
 @manager.command
 def test():
     """
-    Running all the unit tests
+    Run all the unit tests
     """
     import unittest
     tests = unittest.TestLoader().discover('tests')
