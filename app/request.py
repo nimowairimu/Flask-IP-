@@ -1,7 +1,7 @@
 import urllib.request,json
 from .models import Articles,Sources
 import os
-import requests
+
 
 api_key = None
 s_url = None
