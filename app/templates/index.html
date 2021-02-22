@@ -19,5 +19,18 @@
     </head>
     <body>
 
+        {% extends 'base.html'%}
+        {% import 'news_macros.html' as macro %}
+        
+        {% block content %}
+        
+            <div class="container">
+        
+                <h3>{{ articles | count }}</h3>
+                    {{ macro.display_new_articles(articles) }}
+        
+            </div>
+        
+        {% endblock %}
     </body>
 </html>
