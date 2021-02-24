@@ -3,6 +3,13 @@
 ### Author
 Irene Wairimu Mungai
 
+## Screenshots 
+![Screenshot from 2021-02-25 01-10-22](https://user-images.githubusercontent.com/75114735/109073425-66511b80-7707-11eb-8480-b25a662e38be.png)
+![Screenshot from 2021-02-25 01-10-33](https://user-images.githubusercontent.com/75114735/109073474-7963eb80-7707-11eb-805e-e1065714c08c.png)
+![Screenshot from 2021-02-25 01-11-43](https://user-images.githubusercontent.com/75114735/109073507-85e84400-7707-11eb-9996-18d818bbb039.png)
+![Screenshot from 2021-02-25 01-11-53](https://user-images.githubusercontent.com/75114735/109073523-8c76bb80-7707-11eb-9764-690028f1735f.png)
+
+
 
 ## SetUp Dependencies
 > Install these first:
@@ -46,7 +53,10 @@ The user would like to.... :
     $ ./start.sh
 
 
-        
+## Known Bugs 
+The app does not open on heroku.
+Returns a H14 and error 503.
+those are te only known bugs.      
 
 ## License
 > MIT License 2021 Wairimu Mungai
