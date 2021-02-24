@@ -42,8 +42,8 @@ The user would like to.... :
 ## Running the Application
 * To run the application, in your terminal:
 
-    $ chmod +x run.py
-    $ ./run.py
+    $ chmod +x start.sh
+    $ ./start.sh
 
 
         
