@@ -1,14 +1,15 @@
 {% macro displayNewsSourcesList(news_source_list) %}
 {% for source in news_source_list %}
-<div class="col-md-3">
+<div class="col-md-4">
    <div class = "cards">
        <div class="row">
        <div class="caption">
-           <h3 class="header" style="color:#7FB285; font-family:Domine; font-weight: bolder;" > {{source.name}} </h3>
+           <h3 class="header" style="color:#6EA4BF; font-family:Domine; font-weight: bolder;" > {{source.name}} </h3>
        </div>
        <div class="panel-body">
-           <p>
+           <p style="font-family: Domine; font-size: larger;">
                {{ source.description |truncate(120)}}
+           
                <br>
                <br>
                <a class = "btn btn-danger" href="/articles/{{source.id}}">Show Articles from  {{source.name}}</a>

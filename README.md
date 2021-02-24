@@ -1,48 +1,54 @@
-## News-Highlight
+# NEWS 360
 
-## By: IKERRIZ
+### Author
+Irene Wairimu Mungai
 
-## Description
-This is an application that gives users  lists and previews of news articles from various news sources depending on their choices.
 
-## Specifications
-* It enables users to see various news sources and select the ones they prefer
-* Users are able to see all the news articles from that news source
-* The user is able to see the image description and time the news article was created.
-* It also allows the user to click on an article and read it fully from the news source.
+## SetUp Dependencies
+> Install these first:
+* Python3.6
+* pip
+* Flask 
 
-## Setup/Installation Requirements
-* Click on the link to the deployed page
 
-## Known Bugs
-No known bugs so far
+## User stories
+The user would like to.... :
+
+1. As a user, I would like to see various news sources on the homepage of the application.
+1.  As a user, I would also want to select a news source and see all news articles from the selected news source in the application.
+1. As a user, I would want to see the image, description and the time a news article was created.
+1. As a user, I would want to click on an article and read the full article on the source website.
+
 
 ## Technologies used
-* astroid==1.6.1
-* click==7.0
-* colorama==0.3.9
-* dominate==2.4.0
-* Flask==1.1.1
-* Flask-Bootstrap==3.3.7.1
-* Flask-Script==2.0.6
-* gunicorn==19.7.1
-* isort==4.3.21
-* itsdangerous==1.1.0
-* Jinja2==2.10.3
-* lazy-object-proxy==1.4.2
-* MarkupSafe==1.1.1
-* mccabe==0.6.1
-* pylint==2.4.2
-* six==1.12.0
-* typed-ast==1.4.0
-* visitor==0.1.3
-* Werkzeug==0.16.0
-* wrapt==1.11.2
+* Python 3.6
+* Bootstrap
+* Css
 
-## Support and contact details
-Email Address: okothfaith94@gmail.com
 
-## License and terms of use
-MIT License
+## Cloning
+* In your terminal:
+ 1. Make sure you are in your virtual environment 
+ 1. Run ``source virtual/bin/activate ``to activate virtual environment
+ 1.  ``git clone https://github.com/nimowairimu/Test-Password-Locker.git``
+1. ``cd NEWS360``
+1.  ``chmod a+x start.sh``
+1. Then ``chmod a+x start.sh`` to run the application
+         
 
-© ikerriz | newshighlight
+
+
+
+## Running the Application
+* To run the application, in your terminal:
+
+    $ chmod +x run.py
+    $ ./run.py
+
+
+        
+
+## License
+> MIT License 2021 Wairimu Mungai
+
+

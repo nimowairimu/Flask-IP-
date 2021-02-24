@@ -10,16 +10,16 @@
         {% for article in articles %}
         <div class="col-md-3">
             <a href={{article.url}} target="_blank">
-                <img class="img-fluid img-thumbnail" src={{article.urlToImage}} alt="pic">
+                <img class="img-fluid img-thumbnail" src={{article.urlToImage}} alt="article image">
             </a>
             <div class="card">
-                <h4 class="text-bold"> {{article.title}} </h4>
-                <p>by {{article.author}} </p>
+                <h4 style="color: white;font-family: Domine;"> {{article.title}} </h4>
+                <p style="color: white;"> Written by: {{article.author}} </p>
                 <hr>
-                <p> {{article.description}}...
-                    <a href={{article.url}} target="_blank">Read More</a>
+                <p style="color: white;font-family: Domine;"> {{article.description}}...
+                    <a href={{article.url}} target="_blank">Click to Read</a>
                 </p>
-                <p>Published on {{article.publishedAt}}</p>
+                <p style="color: white;font-family: Sacaramento;">Published on: {{article.publishedAt}}</p>
             </div>
         </div>
         {% endfor %}
