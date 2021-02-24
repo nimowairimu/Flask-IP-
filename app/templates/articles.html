@@ -1,28 +1,28 @@
-{% extends 'base.html'%}
+{% extends 'base.html' %} 
 {% block content %}
-<div class ="container-fluid.">
+<div class="container-fluid">
     <div class="row">
         <div class="col-md-12">
-            <h1> {{name}}</h1>
+            <h1> {{name}} </h1>
         </div>
     </div>
-    <div class ="row">
+    <div class="row">
         {% for article in articles %}
-        <div class= "col-md-3">
-            <a href ={{article.url}} target="_blank">
+        <div class="col-md-3">
+            <a href={{article.url}} target="_blank">
                 <img class="img-fluid img-thumbnail" src={{article.urlToImage}} alt="pic">
             </a>
-            <div class ="card">
-                <h4 c;ass ="text-bold"> {{article .title}}</h4>
-                <p> Written by :{{article.author}}</p>
+            <div class="card">
+                <h4 class="text-bold"> {{article.title}} </h4>
+                <p>by {{article.author}} </p>
                 <hr>
-                <p>{{article.description}}
-                  <a href ={{article.url}} target="_blank">Click to read more</a>
+                <p> {{article.description}}...
+                    <a href={{article.url}} target="_blank">Read More</a>
                 </p>
-                <p> Published on {{article.publishedAt}}</p>
+                <p>Published on {{article.publishedAt}}</p>
             </div>
         </div>
-        {{% endfor %}}
+        {% endfor %}
     </div>
 </div>
-{{% endblock%}}
+{% endblock%}

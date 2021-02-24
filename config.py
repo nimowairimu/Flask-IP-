@@ -1,14 +1,24 @@
 import os
 
 class Config:
-    API_KEY=os.environ.get("API_KEY")
-    NEWS_API_BASE_URL='https://newsapi.org/v2/sources?country=us&category={}&apiKey={}'
-    NEWS_ARTICLES_APL_URL='https://newsapi.org/v2/everything?q={}&apiKey={}'
-    SOURCE_ARTICLES_URL='https://newsapi.org/v2/everything?sources={}&apiKey='
+    '''
+    General configuration parent class
+    '''
+    NEWS_API_BASE_URL = 'https://newsapi.org/v2/sources?language=en&category={}&apiKey={}'
+    NEWS_ARTICLES_URL = 'https://newsapi.org/v2/everything?language=en&sources={}&apiKey={}'
+    NEWS_API_KEY = os.environ.get('NEWS_API_KEY')
+
+
+class ProdConfig(Config):
+     pass
 
 class DevConfig(Config):
+
     DEBUG = True
 
+
+
 config_options = {
-'development':DevConfig
+'development':DevConfig,
+'production':ProdConfig
 }
